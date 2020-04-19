@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_fullmoons">
+
+
+    <EditText
+        android:id="@+id/yearInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2020"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAdd"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubstract"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/plus_minus"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/plus_minus"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubstract"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:layout_marginRight="8dp"/>
+
+
+    <TextView
+        android:id="@+id/fullMoon11"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon10"
+        android:layout_marginRight="175dp" />
+
+    <TextView
+        android:id="@+id/fullMoon10"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon9" />
+
+    <TextView
+        android:id="@+id/fullMoon9"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon8" />
+
+    <TextView
+        android:id="@+id/fullMoon8"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon7" />
+
+    <TextView
+        android:id="@+id/fullMoon6"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon5" />
+
+    <TextView
+        android:id="@+id/fullMoon7"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon6" />
+
+    <TextView
+        android:id="@+id/fullMoon5"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon4" />
+
+    <TextView
+        android:id="@+id/fullMoon4"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon3" />
+
+    <TextView
+        android:id="@+id/fullMoon3"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon2" />
+
+    <TextView
+        android:id="@+id/fullMoon2"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon1" />
+
+    <TextView
+        android:id="@+id/fullMoon1"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullMoon0" />
+
+    <TextView
+        android:id="@+id/fullMoon0"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Pełnia..."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hintText" />
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="210dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Rok między 1900-2200..."
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/fullMoon0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

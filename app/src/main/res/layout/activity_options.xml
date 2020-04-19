@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_options">
+
+    <TextView
+        android:id="@+id/selectHemisphereTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Która półkula?"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/hemisphereGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/hemisphereGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectHemisphereTitle">
+
+
+        <RadioButton
+            android:id="@+id/northRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Północna" />
+
+
+        <RadioButton
+            android:id="@+id/southRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Południowa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/selectAlgorithmTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Który algorytm?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hemisphereGroup" />
+
+    <RadioGroup
+        android:id="@+id/algorithmGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectAlgorithmTitle">
+
+        <RadioButton
+            android:id="@+id/simpleRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple" />
+
+        <RadioButton
+            android:id="@+id/conwayRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conway" />
+
+        <RadioButton
+            android:id="@+id/trig1Radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trig 1" />
+
+        <RadioButton
+            android:id="@+id/trig2Radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trig 2" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
