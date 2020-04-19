@@ -1,2 +1,2 @@
 # Lunaris
-Android Application for checking the moon phases
+A PUT project for Ubiquitous: Android Application for checking the moon phases
